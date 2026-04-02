@@ -12,4 +12,4 @@
 <img width="1872" height="639" alt="3" src="https://github.com/user-attachments/assets/f290a9be-a893-4873-81c2-5588898802fa" />
 
 # Concepção do software
-O software foi primordialmente programado em Java, além do $\color{pink}{JavaFX}$ e o $\color{pink}{JavaS Swing}$ para a elaboração da GUI
+O software foi primordialmente programado em Java, além do $\color{pink}{JavaFX}$ e o $\color{pink}{JavaS \space Swing}$ para a elaboração da GUI
