@@ -31,6 +31,7 @@ Outrossim, foi utilizado o $\color{pink}{MySQL}$ para o armazenamento dos dados,
 É possível fazer uso dos arquivos do repositório através de uma IDE qualquer, como o Netbeans, ou por meio do arquivo Jar. Caso opte pelo arquivo Jar, recomendo que inicialize o arquivo diretamente do terminal caso haja algum erro de inicialização das bibliotecas
 
 Em relação à conexão com o database, é necessário fazer alterações no código onde for necessário especificar o nome do seu database, seu usuário e sua senha. Ou seja, nos controllers onde houver a necessidade de conexão com o MySQL. A seguir está o escopo da tabela **itens** acessada e utilizada no código:
+
 <img width="745" height="164" alt="image" src="https://github.com/user-attachments/assets/bee13040-28c8-4b20-90d6-54933baaa81f" />
 
 
