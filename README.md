@@ -4,7 +4,7 @@
 ## Tabela de conteúdos
 - [Concepção do software](#concepção-do-software)
 - [Interfaces gráficas](#interfaces-gráficas)
-- [Como utilizar](#htu)
+- [Como utilizar](#como-utilizar)
 
 <img width="936" height="639" alt="Sobre" src="https://github.com/user-attachments/assets/748984ce-d6af-4a7a-82d9-50b90fa3812b" />
 <img width="1872" height="639" alt="1" src="https://github.com/user-attachments/assets/abdfaeab-ee9d-44b7-9029-acad2dd1b803" />
@@ -18,7 +18,7 @@ Por conta da utilização do **JavaFX**, também foi feito o uso do $\color{pink
 
 Outrossim, foi utilizado o $\color{pink}{MySQL}$ para o armazenamento dos dados, nesse caso, os livros
 
-# Interfaces Gráficas
+# Interfaces gráficas
 - Tela de login
 - Página inicial
 - Visualizador de livros
@@ -26,3 +26,6 @@ Outrossim, foi utilizado o $\color{pink}{MySQL}$ para o armazenamento dos dados,
 - Página de procura de livros
 - Página de edição de livros
 - Sobre
+
+# Como utilizar
+É possível fazer uso dos arquivos do repositório através de uma IDE qualquer, como o Netbeans, ou por meio do arquivo Jar. Caso opte pelo arquivo Jar, recomendo que inicialize o arquivo diretamente do terminal caso haja algum erro de inicialização das bibliotecas
