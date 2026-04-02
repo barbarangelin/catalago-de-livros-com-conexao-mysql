@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="486.0" maxWidth="761.0" minHeight="486.0" minWidth="761.0" prefHeight="486.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minhabibliotecaparticular.PaginaInicialController">
+  <children>
+    <AnchorPane fx:id="janelaPaginaInicial" maxHeight="486.0" maxWidth="761.0" minHeight="486.0" minWidth="761.0" prefHeight="486.0" prefWidth="761.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" blendMode="ADD" fill="#996c4f" height="486.0" layoutX="-2.0" stroke="#00000062" strokeType="INSIDE" width="507.0" />
+            <ImageView blendMode="MULTIPLY" fitHeight="538.0" fitWidth="548.0" layoutX="-35.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/background.jpg" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-0.06" />
+               </effect>
+            </ImageView>
+            <ImageView blendMode="SRC_ATOP" fitHeight="486.0" fitWidth="311.0" layoutX="505.0" opacity="0.97" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/cats.jpg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <DropShadow radius="28.13" spread="0.21" width="93.52">
+                     <color>
+                        <Color opacity="0.7568389773368835" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <Text focusTraversable="true" layoutX="46.0" layoutY="77.0" stroke="BLACK" strokeType="OUTSIDE" text="Minha biblioteca particular">
+               <font>
+                  <Font name="Freestyle Script" size="60.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5486725410528942" centerY="0.5" radius="0.5825688160887552">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7368420958518982" green="0.1473684161901474" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="0.3499999940395355" blue="0.3499999940395355" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Bloom threshold="0.2" />
+               </effect>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="124.0" layoutX="60.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="106.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect></Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="124.0" layoutX="214.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="106.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect></Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="124.0" layoutX="361.0" layoutY="136.0" stroke="BLACK" strokeType="INSIDE" width="106.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.6000000238418579" />
+                     </color>
+                  </DropShadow>
+               </effect></Rectangle>
+            <Button fx:id="BotaoVisualizar" layoutX="70.0" layoutY="149.0" mnemonicParsing="false" onAction="#VisualizarBotaoClk" onMouseEntered="#btnVisalizarMouseProximo" onMouseExited="#btnVisalizarMouseLonge" prefHeight="98.0" prefWidth="86.0" style="-fx-background-color: black;" text="Visualizar livros" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="botaoAdd" layoutX="224.0" layoutY="149.0" mnemonicParsing="false" onAction="#botaoAddClicado" onMouseEntered="#btnAddMouseProximo" onMouseExited="#btnAddMouseLonge" prefHeight="98.0" prefWidth="86.0" style="-fx-background-color: black;" text="Adicionar livro" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="botaoEditar" layoutX="371.0" layoutY="149.0" mnemonicParsing="false" onAction="#botaoEditarClicado" onMouseEntered="#btnEditarMouseProximo" onMouseExited="#btnEditarMouseLonge" prefHeight="98.0" prefWidth="86.0" style="-fx-background-color: black;" text="Editar livro" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="156.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="“A leitura é uma fonte inesgotável de prazer mas por incrível que pareça, a quase totalidade, não sente esta sede.”" wrappingWidth="248.5366668701172">
+               <font>
+                  <Font name="Garamond Italic" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="218.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="– Carlos Drummond de Andrade" wrappingWidth="183.7366943359375">
+               <font>
+                  <Font name="Garamond Bold" size="16.0" />
+               </font>
+            </Text>
+            <ImageView blendMode="MULTIPLY" fitHeight="139.0" fitWidth="184.0" layoutX="40.0" layoutY="309.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/carlos.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="-3.0517578125E-5" endY="460.0" layoutX="505.0" layoutY="26.0" startX="-3.0517578125E-5" startY="-25.999996185302734" strokeWidth="5.0" />
+            <Button fx:id="botaoSobre" layoutX="670.0" layoutY="430.0" mnemonicParsing="false" onAction="#botaoSobreClicado" onMouseEntered="#botaoSobreMouseProximo" onMouseExited="#botaoSobreMouseLonge" text="Sobre">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="CLOSED_HAND" />
+               </cursor>
+            </Button>
+      </children>
+    </AnchorPane>
+  </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>

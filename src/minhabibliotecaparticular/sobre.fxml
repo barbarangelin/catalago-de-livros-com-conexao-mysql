@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minhabibliotecaparticular.SobreController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="761.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffebf7" height="506.0" layoutX="-22.0" layoutY="-13.0" stroke="#bb82df61" strokeType="INSIDE" width="805.0" />
+            <ImageView fitHeight="506.0" fitWidth="781.0" layoutX="-8.0" layoutY="-13.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/sobreBackground.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9fcff" height="232.0" layoutX="97.0" layoutY="118.0" opacity="0.79" stroke="#9e9e9e" strokeType="INSIDE" width="557.0">
+               <effect>
+                  <DropShadow height="58.43" radius="33.98" spread="0.12" width="79.49">
+                     <color>
+                        <Color opacity="0.24620066583156586" />
+                     </color>
+                     <input>
+                        <Glow />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </Rectangle>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="167.0" layoutX="-24.0" layoutY="397.0" opacity="0.54" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="823.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.1071428582072258" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Rectangle>
+            <TextArea editable="false" layoutX="106.0" layoutY="125.0" prefHeight="214.0" prefWidth="539.0" style="-fx-background-color: black;" text="         Esse programa foi feito essencialmente com Java e com Swing e JavaFx &#10;como ferramenta para a criação da interface gráfica.&#10;Não só isso, mas durante a concepção da interface o SceneBuilder foi um &#10;grande auxiliar para o JavaFx.&#10;O intuito desse trabalho pessoal foi utilizar o Java com o MySQL (objeto de estudo)&#10;do meu semestre atual na faculdade) para desenvolver algo que fosse realmente&#10;utlizado por mim.&#10;Tendo isso em consideração, foi decidido criar um programa para catalogar todos&#10;os meus livros.&#10;O entusiasmo foi tão grande que o tema do programa foi de Kuroshitsuji.&#10;Foi necessário quatro dias para terminar o projeto, mas todo o esforço foi dado&#10;com muito agrado. &#10;">
+               <font>
+                  <Font name="Bookman Old Style" size="13.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="botaoVoltar" layoutX="97.0" layoutY="422.0" mnemonicParsing="false" onAction="#botaoVoltarClicado" onMouseEntered="#botaoVoltarMousePerto" onMouseExited="#botaoVoltarMouseLonge" prefHeight="26.0" prefWidth="186.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 2;" text="Voltar" textFill="WHITE">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="14.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.24696049094200134" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView fitHeight="64.0" fitWidth="68.0" layoutX="72.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/buttonCuteSobre.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.2773556113243103" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="315.0" fitWidth="359.0" layoutX="-6.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/cuteCurtain.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="127.0" layoutY="97.0" stroke="WHITE" strokeType="OUTSIDE" text="Entenda mais sobre o programa">
+               <font>
+                  <Font name="Mongolian Baiti" size="40.0" />
+               </font>
+               <effect>
+                  <Glow>
+                     <input>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.16717331111431122" />
+                           </color>
+                        </DropShadow>
+                     </input>
+                  </Glow>
+               </effect>
+            </Text>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="579.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/ciel.png" />
+               </image>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.4346505105495453" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="95.0" fitWidth="110.0" layoutX="333.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/sebastian.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="65.0" layoutX="304.0" layoutY="404.0" stroke="BLACK" strokeType="INSIDE" width="438.0" />
+            <ImageView fitHeight="65.0" fitWidth="90.0" layoutX="634.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/pinkStar.gif" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="73.0" fitWidth="438.0" layoutX="304.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/sobreBack.png" />
+               </image>
+               <effect>
+                  <Glow level="0.13">
+                     <input>
+                        <DropShadow height="35.04" radius="18.189999999999998" width="39.72">
+                           <color>
+                              <Color opacity="0.26823708415031433" />
+                           </color>
+                        </DropShadow>
+                     </input>
+                  </Glow>
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="173.0" fitWidth="833.0" layoutX="-14.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/pinkSparkle.png" />
+               </image>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>

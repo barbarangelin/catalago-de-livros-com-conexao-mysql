@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="761.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="minhabibliotecaparticular.AdicionarLivroController">
+  <children>
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="761.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#afe4fa" height="506.0" layoutX="-22.0" layoutY="-13.0" stroke="#8bb5df61" strokeType="INSIDE" width="805.0" />
+            <ImageView blendMode="OVERLAY" fitHeight="592.0" fitWidth="459.0" layoutX="321.0" layoutY="-46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/backgroundAddPagina.jpg" />
+               </image>
+               <effect>
+                  <Bloom threshold="0.69" />
+               </effect>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="120.0" layoutX="276.0" layoutY="-60.0" opacity="0.45" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="542.0" />
+            <ImageView fitHeight="506.0" fitWidth="401.0" layoutX="-16.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/addLivroBackground.jpg" />
+               </image>
+               <effect>
+                  <DropShadow height="72.5" radius="53.8725" width="144.99">
+                     <color>
+                        <Color opacity="0.5235562920570374" />
+                     </color>
+                     <input>
+                        <Glow level="0.23" />
+                     </input>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+            <ImageView blendMode="OVERLAY" fitHeight="533.0" fitWidth="347.0" layoutX="-25.0" layoutY="-25.0" opacity="0.76" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/starsBlue.gif" />
+               </image>
+            </ImageView>
+            <Button fx:id="voltarBotao" layoutX="91.0" layoutY="405.0" mnemonicParsing="false" onAction="#voltarBotaoClicado" onMouseEntered="#voltarBotaoMousePerto" onMouseExited="#VoltarBotaoMouseLonge" prefHeight="26.0" prefWidth="122.0" text="Voltar" textFill="#eca4cc">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color opacity="0.5144376754760742" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <ImageView blendMode="OVERLAY" fitHeight="88.0" fitWidth="502.0" layoutX="321.0" opacity="0.38" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/whiteCurtain.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="360.0" layoutY="48.0" stroke="#8baee4" strokeType="OUTSIDE" strokeWidth="0.7" text="Preencha ao menos um caixa de texto">
+               <font>
+                  <Font name="Freestyle Script" size="40.0" />
+               </font>
+               <effect>
+                  <Glow level="0.59">
+                     <input>
+                        <DropShadow>
+                           <color>
+                              <Color opacity="0.12234042584896088" />
+                           </color>
+                        </DropShadow>
+                     </input></Glow>
+               </effect>
+            </Text>
+            <ImageView blendMode="ADD" fitHeight="290.0" fitWidth="318.0" layoutX="398.0" layoutY="80.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/loginFrame.png" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+            <TextField fx:id="nomeCaixa" layoutX="432.0" layoutY="137.0" onKeyPressed="#nomeCaixaDiscado" onKeyReleased="#nomeCaixaLiberado" prefHeight="26.0" prefWidth="250.0" promptText="Nome">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="autorCaixa" layoutX="432.0" layoutY="212.0" onKeyPressed="#autorCaixaTeclado" onKeyReleased="#autorCaixaLiberado" prefHeight="26.0" prefWidth="250.0" promptText="Autor">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="editoraCaixa" layoutX="432.0" layoutY="288.0" onKeyPressed="#editoraCaixaTeclado" onKeyReleased="#editoraCaixaLiberado" prefHeight="26.0" prefWidth="250.0" promptText="Editora">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="addBotao" layoutX="496.0" layoutY="405.0" mnemonicParsing="false" onAction="#addBotaoClicado" onMouseEntered="#addBotaoMousePerto" onMouseExited="#addBotaoMouseLonge" prefHeight="26.0" prefWidth="122.0" text="Adicionar" textFill="#52bdbf">
+               <font>
+                  <Font name="Bookman Old Style Bold" size="15.0" />
+               </font>
+            </Button>
+            <ImageView blendMode="ADD" fitHeight="47.0" fitWidth="394.0" layoutX="360.0" layoutY="446.0" opacity="0.58" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/blueEmojis.gif" />
+               </image>
+               <effect>
+                  <Glow />
+               </effect>
+            </ImageView>
+      </children>
+    </AnchorPane>
+  </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>
