@@ -104,7 +104,7 @@ public class EditarLivroController implements Initializable {
         Connection conexão = null;
         try { 
             Class.forName("com.mysql.jdbc.Driver");
-            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/BibliotecaParticular","root","Mel865723#");
+            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/SEU DATABASE","SEU USUÁRIO","SUA SENHA");
             System.out.println("Conexão com o data base da biblioteca particular foi bem sucedido");
             ResultSet rs = null;
             rs = conexão.createStatement().executeQuery("select count(*) as is_in from itens where id="+idCaixa.getText()+";");
@@ -129,7 +129,7 @@ public class EditarLivroController implements Initializable {
         Connection conexão = null;
         try { 
             Class.forName("com.mysql.jdbc.Driver");
-            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/BibliotecaParticular","root","Mel865723#");
+            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/SEU DATABASE","SEU USUÁRIO","SUA SENHA");
             System.out.println("Conexão com o data base da biblioteca particular foi bem sucedido");
             ResultSet rs = null;
             rs = conexão.createStatement().executeQuery("select nome_livro as is_in from itens where id="+idCaixa.getText()+";");
@@ -152,7 +152,7 @@ public class EditarLivroController implements Initializable {
         Connection conexão = null;
         try { 
             Class.forName("com.mysql.jdbc.Driver");
-            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/BibliotecaParticular","root","Mel865723#");
+            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/SEU DATABASE","SEU USUÁRIO","SUA SENHA");
             System.out.println("Conexão com o data base da biblioteca particular foi bem sucedido");
             ResultSet rs = null;
             rs = conexão.createStatement().executeQuery("select * from itens where nome_livro like '"+nomeCaixa.getText()+"%' order by autor_livro");
