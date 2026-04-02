@@ -3,7 +3,7 @@
 
 ## Tabela de conteúdos
 - [Concepção do software](#concepção-do-software)
-- [Interfaces gráficas](#interfaces-graficas)
+- [Interfaces gráficas](#interfaces-gráficas)
 - [Como utilizar](#htu)
 
 <img width="936" height="639" alt="Sobre" src="https://github.com/user-attachments/assets/748984ce-d6af-4a7a-82d9-50b90fa3812b" />
@@ -17,3 +17,12 @@ O software foi primordialmente programado em $\color{pink}{Java}$, além do $\co
 Por conta da utilização do **JavaFX**, também foi feito o uso do $\color{pink}{Scene \space Builder}$ como um software auxiliar
 
 Outrossim, foi utilizado o $\color{pink}{MySQL}$ para o armazenamento dos dados, nesse caso, os livros
+
+# Interfaces Gráficas
+- Tela de login
+- Página inicial
+- Visualizador de livros
+- Página de adição de livros
+- Página de procura de livros
+- Página de edição de livros
+- Sobre
