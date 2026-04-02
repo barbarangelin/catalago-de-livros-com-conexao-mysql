@@ -15,3 +15,5 @@
 O software foi primordialmente programado em $\color{pink}{Java}$, além do $\color{pink}{JavaFX}$ e o $\color{pink}{JavaS \space Swing}$ para a elaboração da GUI
 
 Por conta da utilização do **JavaFX**, também foi feito o uso do $\color{pink}{Scene \space Builder}$ como um software auxiliar
+
+Outrossim, foi utilizado o $\color{pink}{MySQL}$ para o armazenamento dos dados, nesse caso, os livros
