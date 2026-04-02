@@ -71,7 +71,7 @@ public class VisualizarLivrosController implements Initializable {
         Connection conexão = null;
         try { 
             Class.forName("com.mysql.jdbc.Driver");
-            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/BibliotecaParticular","root","Mel865723#");
+            conexão = DriverManager.getConnection("jdbc:mysql://localhost:3306/SEU DATABASE","SEU USUÁRIO","SUA SENHA");
             System.out.println("Conexão com o data base da biblioteca particular foi bem sucedido");
             ResultSet rs = null;
             rs = conexão.createStatement().executeQuery("select * from itens order by autor_livro");
