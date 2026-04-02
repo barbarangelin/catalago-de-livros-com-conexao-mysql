@@ -12,3 +12,4 @@
 <img width="1872" height="639" alt="3" src="https://github.com/user-attachments/assets/f290a9be-a893-4873-81c2-5588898802fa" />
 
 # Concepção do software
+$\color{pink}{# Concepção do software}$
