@@ -1,4 +1,4 @@
-## Software de catalogação de livros <img alt="mysql" src="https://img.shields.io/badge/Java-pink?style=for-the-badge&logo=java&logoColor=white" /> <img alt="mysql" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" /> <img alt="mit" src="https://img.shields.io/badge/MIT-green?style=for-the-badge" />
+## Software de catalogação de livros <img alt="mysql" src="https://img.shields.io/badge/python-purple?style=for-the-badge&logo=python&logoColor=white" /> <img alt="mysql" src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" /> <img alt="mit" src="https://img.shields.io/badge/MIT-green?style=for-the-badge" />
 ### Esse programa foi feito com o objetivo de possibilitar a visualização, a edição e a inserção de livros em uma biblioteca particular digital
 
 ## Tabela de conteúdos
